@@ -65,7 +65,7 @@ function goToInsta () {
   window.location.href = "https://www.instagram.com/"
 }
 
-function goToChatGPT(params) {
+function goToChatGPT() {
   window.location.href = "https://chatgpt.com/"
 }
 
@@ -75,3 +75,8 @@ document.getElementById("themeToggle").addEventListener("change", function (e) {
 
 document.addEventListener("DOMContentLoaded", loadTheme);
 loadTheme();
+
+document.getElementById("chatgpt-btn").addEventListener("click", goToChatGPT);
+document.getElementById("Youtube").addEventListener("click", goToYouTube);
+document.getElementById("insta").addEventListener("click", goToInsta);
+
