@@ -1,0 +1,199 @@
+@import url('https://fonts.cdnfonts.com/css/flapdoodle');
+      :root {
+        --bg-color: #ffb3c6;
+        --text-color: #333;
+        --accent-color: #ff0a54;
+        --card-bg: #ffffff;
+        --shadow-color: rgba(0, 0, 0, 0.1);
+        --input-bg: #f0f0f0;
+      }
+
+      .dark-theme {
+        --bg-color: #1a1a1a;
+        --text-color: #e0e0e0;
+        --accent-color: #6b8cff;
+        --card-bg: #2a2a2a;
+        --shadow-color: rgba(0, 0, 0, 0.3);
+        --input-bg: #333;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s, color 0.3s;
+        overflow: hidden;
+      }
+
+      .container {
+        width: 400px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 20px;
+        margin-right: 150px;
+      }
+
+      .card {
+        width: 100%;
+        border-radius: 16px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: background-color 0.3s, box-shadow 0.3s;
+      }
+
+      .clock {
+        letter-spacing: 17px;
+        font-family: 'Flapdoodle', sans-serif;
+        font-size: 5rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: var(--accent-color);
+      }
+
+      .date {
+        font-size: 20px;
+        margin-bottom: 25px;
+        color: var(--text-color);
+        opacity: 0.8;
+      }
+
+      .search-container {
+        position: relative;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 12px 40px 12px 16px;
+        border-radius: 25px;
+        border: none;
+        background-color: var(--input-bg);
+        color: var(--text-color);
+        font-size: 14px;
+        transition: box-shadow 0.2s, background-color 0.3s;
+      }
+
+      .search-input:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--accent-color);
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: var(--accent-color);
+      }
+
+      .search-icon svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+
+      .theme-toggle {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .theme-toggle-label {
+        margin-right: 10px;
+        font-size: 14px;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 44px;
+        height: 24px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.3s;
+        border-radius: 24px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.3s;
+        border-radius: 50%;
+      }
+
+      input:checked + .slider {
+        background-color: var(--accent-color);
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(20px);
+      }
+
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .icon-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--input-bg);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: var(--accent-color);
+        transition: background-color 0.2s, transform 0.2s;
+      }
+
+      .icon-btn:hover {
+        background-color: var(--accent-color);
+        color: white;
+        transform: translateY(-3px);
+      }
+
+      .icon-btn svg {
+        width: 18px;
+        height: 18px;
+      }
