@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const addBtn = document.getElementById("btn");
+  addBtn.addEventListener("click", addTask);
+});
+
 function addTask() {
   const inputBox = document.getElementById("input-box");
   const taskBox = document.getElementById("task-box");

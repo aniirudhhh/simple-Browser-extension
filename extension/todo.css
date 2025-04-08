@@ -5,6 +5,7 @@
 @import url('https://fonts.cdnfonts.com/css/djb-just-an-outty');
 @import url('https://fonts.cdnfonts.com/css/comic-cheese');
 @import url('https://fonts.cdnfonts.com/css/marinthea');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
   --input-clr: #ff4d6d;
@@ -83,6 +84,9 @@ h1{
 }
 
 .task-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   display: flex;
   align-items: center;
   gap: 10px;
