@@ -13,7 +13,7 @@ This Chrome extension replaces your new tab with a real-time clock, a simple to-
 
 1. Download or Clone the Repository
    You can download the zip or use Git:
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/aniirudhhh/simple-Browser-extension
    Or
    just click on the green Code button and select Download ZIP, then extract it.
 2. Open Chrome Extensions Page
